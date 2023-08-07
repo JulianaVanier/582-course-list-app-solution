@@ -1,6 +1,6 @@
 <template>
   <h2>Course List</h2>
-  <div class="course-list">
+  <div data-testid="CourseItem-stub" class="course-list">
     <CourseItem
       v-for="course in courses"
       :course="course"
