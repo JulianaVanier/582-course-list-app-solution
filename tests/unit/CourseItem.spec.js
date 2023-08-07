@@ -76,7 +76,6 @@ describe("CourseItem.vue", () => {
     expect(wrapper.find("button").text()).toBe(buttonadd);
   });
 
-  
   it("no button when the course is full", async () => {
     const course = {
       name: "Vue.js",
@@ -117,5 +116,4 @@ describe("CourseItem.vue", () => {
     expect(wrapper.emitted("addCourse")[0]).toEqual([course.id]);
     console.log(wrapper.emitted().sendAdd);
   });
-
 });
